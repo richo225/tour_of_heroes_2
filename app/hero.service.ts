@@ -7,7 +7,7 @@ import { HEROES } from "./mock-heroes"
 // Angular may need this to inject other dependencies into the service in the future.
 export class HeroService {
 
-  getHeroes(): Hero[] {
-    return HEROES;
+  getHeroes(): Promise<Hero[]> {
+    return Promise.resolve(HEROES);
   }
 }
