@@ -4,6 +4,7 @@ import { HeroService } from "./hero.service";
 
 // @Component decorator associates metadata with the AppComponent
 @Component({
+  moduleId: module.id,
   selector: "my-heroes",
   template:`
     <ul class="heroes">
