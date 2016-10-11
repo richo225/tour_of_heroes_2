@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Params } from "@angular/router";
 import { Location } from "@angular/common";
 
+import { Hero } from './hero';
 import { HeroService } from "./hero.service";
 
 @Component({
@@ -12,6 +13,7 @@ import { HeroService } from "./hero.service";
 })
 
 export class HeroDetailComponent implements OnInit {
+  hero: Hero;
 
   constructor(
     private heroService: HeroService,
